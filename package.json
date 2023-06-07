@@ -1,6 +1,6 @@
 {
   "name": "semper-api-module",
-  "version": "1.0.1",
+  "version": "1.1.3",
   "description": "Ein NPM-Package, dass für die Semper Discord Community erstellt wurde.",
   "main": "index.js",
   "scripts": {
