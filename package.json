@@ -1,6 +1,6 @@
 {
   "name": "semper-api-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ein NPM-Package, dass für die Semper Discord Community erstellt wurde.",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,8 @@
     "url": "https://github.com/xTheFreeZe/semper-npm-module"
   },
   "author": "Marwin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.4"
+  }
 }
