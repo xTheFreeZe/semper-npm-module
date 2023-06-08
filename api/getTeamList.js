@@ -30,7 +30,7 @@ const getTeamList = async (guildId, start, end) => {
   } catch (error) {
 
     console.error('[ERROR] Failed to fetch team list data from API:', error);
-    return;
+    return false;
 
   }
 };
