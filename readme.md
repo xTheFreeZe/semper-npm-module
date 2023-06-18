@@ -104,6 +104,34 @@ if (response.status) return console.log('Success!');
 
 ```
 
+### 6. setPlayerData(playerRoles, playerName, guildId, playerId)
+
+This function sets the player data of a player who is in a team.
+
+
+```js
+
+const { setPlayerData } = require('semper-api-module');
+
+const roleArray = [];
+const guild = await client.guilds.fetch(guildId);
+const member = await guild.members.fetch(playerDiscordID);
+const memberRoles = member.roles.cache;
+    
+memberRoles.forEach(role => {
+  
+  // Discord returns the role name with an @ in front of it, so we need to remove it
+  roleArray.push((role.name).replace(/@/g, ''));
+  
+});
+
+// This funtions returns a boolean as a response
+const response = await setPlayerData(roleArray, 'playerName', 'guildId', 'playerId');
+
+if (response) return console.log('Success!');
+
+```
+
 ## Who made this?
 
 This module was made by [Marwin](https://github.com/xTheFreeZe).
