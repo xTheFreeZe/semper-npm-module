@@ -11,5 +11,8 @@ const getMappoolData = require('./api/stream/getMappoolData.js');
 const getSocialData = require('./api/stream/getSocialData.js');
 const getStreamTeam = require('./api/stream/getStreamTeam.js');
 const getTeamLineUp = require('./api/stream/getTeamLineUp.js');
+const getScoreData = require('./api/stream/getScoreData.js');
 
-module.exports = { getTeamData, getTeamList, getFeedbackList, editSkillRating, editLFPList, setPlayerData, getCasterData, getEventData, getMappoolData, getSocialData, getStreamTeam, getTeamLineUp };
+const getLangCodeFromUser = require('./api/core/getLangCodeFromUser.js');
+
+module.exports = { getTeamData, getTeamList, getFeedbackList, editSkillRating, editLFPList, setPlayerData, getCasterData, getEventData, getMappoolData, getSocialData, getStreamTeam, getTeamLineUp, getScoreData, getLangCodeFromUser };
