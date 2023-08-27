@@ -132,6 +132,22 @@ if (response) return console.log('Success!');
 
 ```
 
+### 7. getLangCodeFromUser(interaction)
+
+This function returns the language code of a user (en, de)
+
+```js
+
+const { getLangCodeFromUser } = require('semper-api-module');
+
+// Interactions are only available since Discord.js v13
+// For example, slash commands, button clicks, etc.
+const langCode = await getLangCodeFromUser(interaction);
+
+console.log(langCode);
+
+```
+
 ## Who made this?
 
 This module was made by [Marwin](https://github.com/xTheFreeZe).
