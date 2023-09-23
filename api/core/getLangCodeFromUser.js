@@ -22,9 +22,9 @@ const getLangCodeFromUser = (interaction) => {
 
     return 'de';
 
-  } else if (roleArray.includes('Englisc')) {
+  } else if (roleArray.includes('English')) {
 
-    return 'de';
+    return 'en';
 
   } else {
 
